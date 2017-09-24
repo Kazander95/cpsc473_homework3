@@ -1,6 +1,6 @@
-(function(window) {
+(function(process) {
   'use strict';
-  var App = window.App || {};
+  var App = process.App || {};
 
   function Truck(truckId, db) {
     this.truckId = truckId;
@@ -27,5 +27,5 @@
   };
 
   App.Truck = Truck;
-  window.App = App;
-})(window);
+  process.App = App;
+})(process);
